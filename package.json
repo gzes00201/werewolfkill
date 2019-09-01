@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "pwa": "http-server -p 8081 -c-1 dist/werewolfkill",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -18,7 +19,11 @@
     "@angular/forms": "~8.2.4",
     "@angular/platform-browser": "~8.2.4",
     "@angular/platform-browser-dynamic": "~8.2.4",
+    "@angular/platform-server": "~8.2.4",
+    "@angular/pwa": "^0.803.2",
     "@angular/router": "~8.2.4",
+    "@angular/service-worker": "~8.2.4",
+    "http-server": "^0.11.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
