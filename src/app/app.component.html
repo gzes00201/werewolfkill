@@ -308,7 +308,7 @@
   <img
     width="60"
     alt="Angular Logo"
-    src="../assets/icon.png"
+    [src]="'assets/icon.png'"
   />
   <span>狼人殺控制器</span>
     <div class="spacer"></div>
@@ -423,8 +423,25 @@
         <span>騎士請閉眼</span>
     </a>
   </div>
+  <h2 [class.kill]="!guardLife">守衛
+    <a [class.kill]="!guardLife" href="javascript:;" (click)="guardLife = !guardLife">
+     <span>(殺)</span>
+   </a>
+</h2>
+<div class="card-container">
+  <a class="card" href="javascript:;" (click)="play('guardUp')">
+      <span>守衛請睜眼</span>
+  </a>
+  <a class="card" href="javascript:;" (click)="play('guardSleep')">
+      <span>守衛請閉眼</span>
+  </a>
 </div>
-
+</div>
+<ng-template #appShell>
+  <!-- <app-app-shell></app-app-shell> -->
+  <div></div>
+</ng-template>
+<!-- <app-app-shell></app-app-shell> -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->

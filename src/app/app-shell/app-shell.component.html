@@ -1,1 +1,8 @@
 <p>app-shell works!</p>
+<div *ngFor="let distributed of distributeds; trackBy: trackByTitle">
+  <p>{{distributed.title}}</p>
+  <div *ngFor="let item of distributed.list; trackBy: trackByVal" >
+    <span>{{ item.name }}</span>
+    <span>{{ item.val }}</span>
+  </div>
+</div>

@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { RouterModule } from '@angular/router';
+import { AppShellComponent } from './app-shell/app-shell.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppShellComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

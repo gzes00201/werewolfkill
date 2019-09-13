@@ -15,6 +15,6 @@ const routes: Routes = [ { path: 'shell', component: AppShellComponent }];
     RouterModule.forRoot(routes),
   ],
   bootstrap: [AppComponent],
-  declarations: [AppShellComponent],
+  // declarations: [AppShellComponent],
 })
 export class AppServerModule {}
